@@ -26,7 +26,6 @@ public class HomeFragment extends Fragment {
 
     View rootView;
     Toolbar toolbar;
-    LineChart chart;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,8 +36,6 @@ public class HomeFragment extends Fragment {
 
         setView();
 
-        initializeLineGraph();
-
         return rootView;
     }
 
@@ -48,44 +45,6 @@ public class HomeFragment extends Fragment {
     }
 
     protected void setView() {
-        chart = (LineChart) rootView.findViewById(R.id.chart);
-    }
-
-    protected void initializeLineGraph() {
-        List<Entry> entries = new ArrayList<>();
-
-        float max = 20;
-        float min = 0;
-
-        for(int i = 0; i < 10; i++) {
-            Random r = new Random();
-            float x = (float) i;
-
-            float y = r.nextFloat() * (max - min) + min;
-            LingeGraphTool.addPoint(entries, x, y);
-        }
-
-        LineDataSet dataSet = new LineDataSet(entries, "Valeur de reférence"); // add entries to dataset
-        dataSet.setColor(getResources().getColor(R.color.red));
-
-        LineData lineData = new LineData(dataSet);
-
-        List<Entry> entries2 = new ArrayList<>();
-        for(int i = 0; i < 5; i++) {
-            Random r = new Random();
-            float x = (float) i;
-
-            float y = r.nextFloat() * (max - min) + min;
-            LingeGraphTool.addPoint(entries2, x, y);
-        }
-
-        LineDataSet dataSet2 = new LineDataSet(entries2, "Autre"); // add entries to dataset
-        dataSet2.setColor(getResources().getColor(R.color.defaultColor));
-
-        lineData.addDataSet(dataSet2);
-
-        chart.setData(lineData);
-        chart.invalidate();
 
     }
 }

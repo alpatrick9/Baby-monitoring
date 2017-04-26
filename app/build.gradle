@@ -26,6 +26,12 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
+    
+    // charts and graph
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+    // orm lite
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+
     testCompile 'junit:junit:4.12'
 }
