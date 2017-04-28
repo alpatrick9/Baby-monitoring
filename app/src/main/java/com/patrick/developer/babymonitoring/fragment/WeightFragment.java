@@ -1,6 +1,8 @@
 package com.patrick.developer.babymonitoring.fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -19,10 +21,15 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.patrick.developer.babymonitoring.R;
+import com.patrick.developer.babymonitoring.dao.BabyWeightDao;
 import com.patrick.developer.babymonitoring.init.InitChart;
 import com.patrick.developer.babymonitoring.model.entity.Baby;
+import com.patrick.developer.babymonitoring.model.entity.BabyWeight;
+import com.patrick.developer.babymonitoring.tools.FragmentTool;
 import com.patrick.developer.babymonitoring.tools.constant.BackStatus;
 import com.patrick.developer.babymonitoring.tools.constant.PreviousStatus;
+
+import java.sql.SQLException;
 
 /**
  * Created by developer on 4/27/17.
@@ -94,6 +101,10 @@ public class WeightFragment extends Fragment {
         if(bundle.containsKey("baby")) {
             baby = (Baby) bundle.get("baby");
         }
+        if(bundle.containsKey("weight")) {
+            BabyWeight babyWeight = (BabyWeight) bundle.get("weight");
+            setForm(babyWeight);
+        }
     }
 
     protected void setInfoBaby() {
@@ -138,8 +149,39 @@ public class WeightFragment extends Fragment {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Ajouter", Toast.LENGTH_SHORT).show();
+                String value = valueEditText.getText().toString();
+                String month = monthEditText.getText().toString();
+                BabyWeight babyWeight = new BabyWeight(
+                        value.isEmpty() ? null : Float.parseFloat(value),
+                        month.isEmpty() ? null : Integer.parseInt(month),
+                        baby);
+                babyWeight.setObs(baby.getSexe());
+                Fragment fragment = new WeightFragment();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("baby", baby);
+                if(isValid(babyWeight)) {
+                    BabyWeightDao dao = new BabyWeightDao(getActivity());
+                    try {
+                        dao.create(babyWeight);
+                    } catch (SQLException e) {
+                        Toast.makeText(getActivity(), "L'enregistrement à échouer!", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    bundle.putSerializable("weight", babyWeight);
+                    Toast.makeText(getActivity(), "Tous les champs sont obligatoires!", Toast.LENGTH_LONG).show();
+                }
+                fragment.setArguments(bundle);
+                FragmentTool.replaceFragment(getActivity(), fragment);
             }
         });
+    }
+
+    protected boolean isValid(BabyWeight babyWeight) {
+        return (babyWeight.getWeight() == null || babyWeight.getMonth() == null) ? false : true;
+    }
+
+    protected void setForm(BabyWeight babyWeight) {
+        valueEditText.setText(babyWeight.getWeight() == null ? "" : String.valueOf(babyWeight.getWeight()));
+        monthEditText.setText(babyWeight.getMonth() == null ? "" : String.valueOf(babyWeight.getMonth()));
     }
 }

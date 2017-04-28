@@ -4,12 +4,14 @@ import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+
 /**
  * Created by developer on 4/26/17.
  */
 
 @DatabaseTable(tableName = "BABYWEIGHT")
-public class BabyWeight {
+public class BabyWeight implements Serializable {
 
     @DatabaseField(generatedId = true)
     protected Long id;
@@ -17,8 +19,8 @@ public class BabyWeight {
     @DatabaseField(columnName = "WEIGHT")
     protected Float weight;
 
-    @DatabaseField(columnName = "MONTH", dataType = DataType.INTEGER, defaultValue = "0")
-    protected int month;
+    @DatabaseField(columnName = "MONTH", defaultValue = "0")
+    protected Integer month;
 
     @DatabaseField(columnName = "OBS", canBeNull = true)
     protected String obs;
@@ -29,7 +31,7 @@ public class BabyWeight {
     public BabyWeight() {
     }
 
-    public BabyWeight(Float weight, int month, Baby baby) {
+    public BabyWeight(Float weight, Integer month, Baby baby) {
         this.weight = weight;
         this.month = month;
         this.baby = baby;
@@ -51,11 +53,11 @@ public class BabyWeight {
         this.weight = weight;
     }
 
-    public int getMonth() {
+    public Integer getMonth() {
         return month;
     }
 
-    public void setMonth(int month) {
+    public void setMonth(Integer month) {
         this.month = month;
     }
 

@@ -119,7 +119,7 @@ public class InitChart {
             entries.add(entry);
         }
 
-        LineDataSet data = new LineDataSet(entries, "Poid de "+baby.getLastName() +" "+baby.getLastName());
+        LineDataSet data = new LineDataSet(entries, "Poid de "+baby.getLastName() +" "+baby.getFirstName());
         data.setColor(context.getResources().getColor(R.color.custom_baby));
         //dataMax.setDrawCircles(false);
 
@@ -142,7 +142,7 @@ public class InitChart {
             entries.add(entry);
         }
 
-        LineDataSet data = new LineDataSet(entries, "Taille de "+baby.getLastName() +" "+baby.getLastName());
+        LineDataSet data = new LineDataSet(entries, "Taille de "+baby.getLastName() +" "+baby.getFirstName());
         data.setColor(context.getResources().getColor(R.color.custom_baby));
         //dataMax.setDrawCircles(false);
 

@@ -19,10 +19,16 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.patrick.developer.babymonitoring.R;
+import com.patrick.developer.babymonitoring.dao.BabySizeDao;
 import com.patrick.developer.babymonitoring.init.InitChart;
 import com.patrick.developer.babymonitoring.model.entity.Baby;
+import com.patrick.developer.babymonitoring.model.entity.BabySize;
+import com.patrick.developer.babymonitoring.model.entity.BabyWeight;
+import com.patrick.developer.babymonitoring.tools.FragmentTool;
 import com.patrick.developer.babymonitoring.tools.constant.BackStatus;
 import com.patrick.developer.babymonitoring.tools.constant.PreviousStatus;
+
+import java.sql.SQLException;
 
 /**
  * Created by developer on 4/28/17.
@@ -63,7 +69,7 @@ public class SizeFragment extends Fragment {
         chart.setData(lineData);
         chart.invalidate();
 
-        addWeight();
+        addSize();
 
         return rootView;
     }
@@ -91,7 +97,13 @@ public class SizeFragment extends Fragment {
 
     protected void getArgument() {
         Bundle bundle = getArguments();
-        baby = (Baby) bundle.get("baby");
+        if(bundle.containsKey("baby")) {
+            baby = (Baby) bundle.get("baby");
+        }
+        if(bundle.containsKey("size")) {
+            BabySize babySize = (BabySize) bundle.get("size");
+            setForm(babySize);
+        }
     }
 
     protected void setInfoBaby() {
@@ -132,12 +144,43 @@ public class SizeFragment extends Fragment {
         lineData = InitChart.initCharBabySize(getActivity(), lineData, baby);
     }
 
-    protected void addWeight() {
+    protected void addSize() {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Ajouter", Toast.LENGTH_SHORT).show();
+                String value = valueEditText.getText().toString();
+                String month = monthEditText.getText().toString();
+                BabySize babySize = new BabySize(
+                        value.isEmpty() ? null : Float.parseFloat(value),
+                        month.isEmpty() ? null : Integer.parseInt(month),
+                        baby);
+                babySize.setObs(baby.getSexe());
+                Fragment fragment = new SizeFragment();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("baby", baby);
+                if(isValid(babySize)) {
+                    BabySizeDao dao = new BabySizeDao(getActivity());
+                    try {
+                        dao.create(babySize);
+                    } catch (SQLException e) {
+                        Toast.makeText(getActivity(), "L'enregistrement à échouer!", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    bundle.putSerializable("size", babySize);
+                    Toast.makeText(getActivity(), "Tous les champs sont obligatoires!", Toast.LENGTH_LONG).show();
+                }
+                fragment.setArguments(bundle);
+                FragmentTool.replaceFragment(getActivity(), fragment);
             }
         });
+    }
+
+    protected boolean isValid(BabySize babySize) {
+        return (babySize.getSize() == null || babySize.getMonth() == null) ? false : true;
+    }
+
+    protected void setForm(BabySize babySize) {
+        valueEditText.setText(babySize.getSize() == null ? "" : String.valueOf(babySize.getSize()));
+        monthEditText.setText(babySize.getMonth() == null ? "" : String.valueOf(babySize.getMonth()));
     }
 }

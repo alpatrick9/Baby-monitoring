@@ -19,18 +19,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/config/SqliteHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/config/SqliteHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabySizeDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabySizeDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabyWeightDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabyWeightDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/SizeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/SizeFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/WeightFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/WeightFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabyWeight.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabyWeight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/baby_evolution_graph_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/baby_evolution_graph_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="Babymonitoring.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,33 +56,41 @@
     <favorites_list name="Babymonitoring" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55253166">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="SizeFragment.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SizeFragment.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/SizeFragment.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="536">
-                  <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+                <state relative-caret-position="312">
+                  <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#4181#4385#0" expanded="true" />
-                    <element signature="e#4384#4385#0" expanded="true" />
+                    <element signature="e#4669#6057#0" expanded="true" />
+                    <element signature="e#6056#6057#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="WeightFragment.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/WeightFragment.java">
+          <file leaf-file-name="InitChart.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="143" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+                <state relative-caret-position="323">
+                  <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#4236#4440#0" expanded="true" />
-                    <element signature="e#4439#4440#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BabySize.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="113">
+                  <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -96,19 +98,18 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="baby_evolution_graph_fragment.xml" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/baby_evolution_graph_fragment.xml">
+        <leaf>
+          <file leaf-file-name="WeightFragment.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/WeightFragment.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="568">
-                  <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+                <state relative-caret-position="278">
+                  <caret line="106" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
                   <folding>
-                    <element signature="e#1614#1635#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#4726#6136#0" expanded="true" />
+                    <element signature="e#6135#6136#0" expanded="true" />
                   </folding>
                 </state>
-              </provider>
-              <provider editor-type-id="android-designer2">
-                <state />
               </provider>
             </entry>
           </file>
@@ -1802,17 +1803,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChartWeight.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/baby_evolution_graph_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabyWeight.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabyWeightDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/color/custom_baby.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/config/SqliteHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabySizeDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/adapter/BabyListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/config/SqliteHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabyWeight.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/WeightFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/SizeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java" />
       </list>
     </option>
   </component>
@@ -2533,7 +2534,7 @@
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216308" sideWeight="0.486631" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216308" sideWeight="0.42459893" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.6171123" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2549,8 +2550,8 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="99" y="127" width="1722" height="854" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216308" sideWeight="0.51336896" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49144384" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216308" sideWeight="0.57540107" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.4893048" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15508021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2930,33 +2931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/config/SqliteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabyWeight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-          <folding>
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/dao/BabyWeightDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -2981,44 +2955,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabyWeight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="129" column="43" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/tools/dialog_manager/AddBabyDialogBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
+        <state relative-caret-position="371">
+          <caret line="224" column="29" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/config/SqliteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/model/entity/BabySize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/WeightFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="143" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+        <state relative-caret-position="278">
+          <caret line="106" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4236#4440#0" expanded="true" />
-            <element signature="e#4439#4440#0" expanded="true" />
+            <element signature="e#4726#6136#0" expanded="true" />
+            <element signature="e#6135#6136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/fragment/SizeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+        <state relative-caret-position="312">
+          <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4181#4385#0" expanded="true" />
-            <element signature="e#4384#4385#0" expanded="true" />
+            <element signature="e#4669#6057#0" expanded="true" />
+            <element signature="e#6056#6057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/patrick/developer/babymonitoring/init/InitChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
