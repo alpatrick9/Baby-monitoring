@@ -23,7 +23,7 @@ public class BabySize {
     @DatabaseField(columnName = "OBS", canBeNull = true)
     protected String obs;
 
-    @DatabaseField(foreign = true, canBeNull = true)
+    @DatabaseField(columnName ="BABY_ID" ,foreign = true, canBeNull = true)
     protected Baby baby;
 
     public BabySize() {

@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="56491211245b7e97ed46c9d47fb24f3becc37b01">
+        sha1="2baa90cf1cb0ed74944773be0adc4fbe5b8cc9ee">
         <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2918a9d708fdbc30cca71313e0010ad3ec81ec3a/classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="de5e4cc2e1a3e83bdb7edb96b1e659eca2baa18d">
+        sha1="223c40150f710dc241a50f205b87b5870876be91">
         <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_43fa8cf95c9955a6dd5c8cd8f3ec18adc8c1cad2/classes.dex" />
     </item>
     <item

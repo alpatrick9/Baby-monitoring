@@ -28,7 +28,7 @@ public class InitChart {
 
         BabyWeightDao dao = new BabyWeightDao(context);
 
-        if(baby.getSexe() == Sexe.Fille.name()) {
+        if(baby.getSexe().equals(Sexe.Fille.name())) {
             min = dao.getAllMinsOrMaxs(Constant.min_girl.name());
             max = dao.getAllMinsOrMaxs(Constant.max_girl.name());
         } else {
@@ -68,7 +68,7 @@ public class InitChart {
         List<BabySize> min, max;
         BabySizeDao dao = new BabySizeDao(context);
 
-        if(baby.getSexe() == Sexe.Fille.name()) {
+        if(baby.getSexe().equals(Sexe.Fille.name())) {
             min = dao.getAllMinsOrMaxs(Constant.min_girl.name());
             max = dao.getAllMinsOrMaxs(Constant.max_girl.name());
         } else {
@@ -101,6 +101,52 @@ public class InitChart {
         LineData lineData = new LineData();
         lineData.addDataSet(dataMax);
         lineData.addDataSet(dataMin);
+        return lineData;
+    }
+
+    public static LineData initCharBabyWeight(Context context,LineData lineData,  Baby baby) {
+        List<BabyWeight> babyWeights;
+
+        BabyWeightDao dao = new BabyWeightDao(context);
+        babyWeights = dao.findByBaby(baby);
+
+        if(babyWeights.size() == 0)
+            return lineData;
+
+        List<Entry> entries = new ArrayList<>();
+        for (BabyWeight babyWeight: babyWeights) {
+            Entry entry = new Entry(babyWeight.getMonth(), babyWeight.getWeight());
+            entries.add(entry);
+        }
+
+        LineDataSet data = new LineDataSet(entries, "Poid de "+baby.getLastName() +" "+baby.getLastName());
+        data.setColor(context.getResources().getColor(R.color.custom_baby));
+        //dataMax.setDrawCircles(false);
+
+        lineData.addDataSet(data);
+        return lineData;
+    }
+
+    public static LineData initCharBabySize(Context context,LineData lineData,  Baby baby) {
+        List<BabySize> babySizes;
+
+        BabySizeDao dao = new BabySizeDao(context);
+        babySizes = dao.findByBaby(baby);
+
+        if(babySizes.size() == 0)
+            return lineData;
+
+        List<Entry> entries = new ArrayList<>();
+        for (BabySize babySize: babySizes) {
+            Entry entry = new Entry(babySize.getMonth(), babySize.getSize());
+            entries.add(entry);
+        }
+
+        LineDataSet data = new LineDataSet(entries, "Taille de "+baby.getLastName() +" "+baby.getLastName());
+        data.setColor(context.getResources().getColor(R.color.custom_baby));
+        //dataMax.setDrawCircles(false);
+
+        lineData.addDataSet(data);
         return lineData;
     }
 }

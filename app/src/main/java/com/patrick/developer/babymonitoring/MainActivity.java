@@ -177,28 +177,23 @@ public class MainActivity extends AppCompatActivity
 
                         if(i == initDataBoy.getwMax().size() - 1) {
                             babyBoySizeMin = new BabySize(initDataBoy.getsMin().get(i),12,null);
-
                             babyBoySizeMax = new BabySize(initDataBoy.getsMax().get(i),12, null);
-
                             babyBoyWeightMin = new BabyWeight(initDataBoy.getwMin().get(i),12, null);
-
                             babyBoyWeightMax = new BabyWeight(initDataBoy.getwMax().get(i), 12, null);
 
                             babyGirlSizeMin = new BabySize(initDataGirl.getsMin().get(i),12,null);
                             babyGirlSizeMax = new BabySize(initDataGirl.getsMax().get(i),12, null);
-
                             babyGirlWeightMin = new BabyWeight(initDataGirl.getwMin().get(i),12, null);
                             babyGirlWeightMax = new BabyWeight(initDataGirl.getwMax().get(i), 12, null);
+
                         } else {
                             babyBoySizeMin = new BabySize(initDataBoy.getsMin().get(i),i,null);
                             babyBoySizeMax = new BabySize(initDataBoy.getsMax().get(i),i, null);
-
                             babyBoyWeightMin = new BabyWeight(initDataBoy.getwMin().get(i),i, null);
                             babyBoyWeightMax = new BabyWeight(initDataBoy.getwMax().get(i), i, null);
 
                             babyGirlSizeMin = new BabySize(initDataGirl.getsMin().get(i),i,null);
                             babyGirlSizeMax = new BabySize(initDataGirl.getsMax().get(i),i, null);
-
                             babyGirlWeightMin = new BabyWeight(initDataGirl.getwMin().get(i),i, null);
                             babyGirlWeightMax = new BabyWeight(initDataGirl.getwMax().get(i), i, null);
                         }

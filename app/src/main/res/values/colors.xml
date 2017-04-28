@@ -8,4 +8,6 @@
 
     <color name="minColor">#fc0303</color>
     <color name="maxColor">#d6b2b2</color>
+
+    <color name="custom_baby">#1bf1db</color>
 </resources>

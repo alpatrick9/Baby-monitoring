@@ -7,7 +7,10 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -31,7 +34,13 @@ public class SizeFragment extends Fragment {
     Toolbar toolbar;
 
     LineChart chart;
+    LineData lineData;
+
     TextView infoBabyTextView;
+    TextView titleFormTextView;
+    EditText valueEditText;
+    EditText monthEditText;
+    Button saveButton;
 
     Baby baby;
     @Override
@@ -47,9 +56,14 @@ public class SizeFragment extends Fragment {
 
         setInfoBaby();
 
-        initializeChart();
+        lineData = initializeChart();
 
+        initializeChartBaby();
+
+        chart.setData(lineData);
         chart.invalidate();
+
+        addWeight();
 
         return rootView;
     }
@@ -63,6 +77,16 @@ public class SizeFragment extends Fragment {
     protected void setView() {
         chart = (LineChart) rootView.findViewById(R.id.chart);
         infoBabyTextView = (TextView) rootView.findViewById(R.id.infoBaby);
+
+        titleFormTextView = (TextView) rootView.findViewById(R.id.title_form);
+        titleFormTextView.setText("Nouvelle tailles");
+
+        valueEditText = (EditText) rootView.findViewById(R.id.value);
+        valueEditText.setHint("Tailles en cm");
+
+        monthEditText = (EditText) rootView.findViewById(R.id.month);
+        monthEditText.setHint("Mois du bébé");
+        saveButton = (Button) rootView.findViewById(R.id.saveButton);
     }
 
     protected void getArgument() {
@@ -74,9 +98,8 @@ public class SizeFragment extends Fragment {
         infoBabyTextView.setText(Html.fromHtml(baby.toString()));
     }
 
-    protected void initializeChart() {
+    protected LineData initializeChart() {
         LineData lineData = InitChart.initChartSize(getActivity(), baby);
-        chart.setData(lineData);
 
         XAxis xAxis = chart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -88,6 +111,7 @@ public class SizeFragment extends Fragment {
 
         YAxis yAxisRight = chart.getAxisRight();
         yAxisRight.setValueFormatter(iAxisValueFormatterY);
+        return lineData;
     }
 
     protected IAxisValueFormatter iAxisValueFormatterX = new IAxisValueFormatter() {
@@ -103,4 +127,17 @@ public class SizeFragment extends Fragment {
             return value + " cm";
         }
     };
+
+    protected void initializeChartBaby() {
+        lineData = InitChart.initCharBabySize(getActivity(), lineData, baby);
+    }
+
+    protected void addWeight() {
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "Ajouter", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }
