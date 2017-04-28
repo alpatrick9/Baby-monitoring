@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.LineData;
@@ -124,6 +125,9 @@ public class WeightFragment extends Fragment {
 
         YAxis yAxisRight = chart.getAxisRight();
         yAxisRight.setValueFormatter(iAxisValueFormatterY);
+
+        Legend legend = chart.getLegend();
+        legend.setForm(Legend.LegendForm.CIRCLE);
         return lineData;
     }
 

@@ -42,7 +42,7 @@ public class InitChart {
             Entry e = new Entry(b.getMonth(), b.getWeight());
             entriesMin.add(e);
         }
-        LineDataSet dataMin = new LineDataSet(entriesMin, "Valeur de réf. minimum");
+        LineDataSet dataMin = new LineDataSet(entriesMin, "Réf. min");
         dataMin.setColor(context.getResources().getColor(R.color.minColor));
         dataMin.setValueTextColor(context.getResources().getColor(android.R.color.transparent));
         dataMin.setDrawCircles(false);
@@ -53,7 +53,7 @@ public class InitChart {
             Entry e = new Entry(b.getMonth(), b.getWeight());
             entriesMax.add(e);
         }
-        LineDataSet dataMax = new LineDataSet(entriesMax, "Valeur de réf. maximum");
+        LineDataSet dataMax = new LineDataSet(entriesMax, "Réf. max");
         dataMax.setColor(context.getResources().getColor(R.color.maxColor));
         dataMax.setValueTextColor(context.getResources().getColor(android.R.color.transparent));
         dataMax.setDrawCircles(false);
@@ -82,7 +82,7 @@ public class InitChart {
             Entry e = new Entry(b.getMonth(), b.getSize());
             entriesMin.add(e);
         }
-        LineDataSet dataMin = new LineDataSet(entriesMin, "Valeur de réf. minimum");
+        LineDataSet dataMin = new LineDataSet(entriesMin, "Réf. min");
         dataMin.setColor(context.getResources().getColor(R.color.minColor));
         dataMin.setValueTextColor(context.getResources().getColor(android.R.color.transparent));
         dataMin.setDrawCircles(false);
@@ -93,7 +93,7 @@ public class InitChart {
             Entry e = new Entry(b.getMonth(), b.getSize());
             entriesMax.add(e);
         }
-        LineDataSet dataMax = new LineDataSet(entriesMax, "Valeur de réf. maximum");
+        LineDataSet dataMax = new LineDataSet(entriesMax, "Réf. max");
         dataMax.setColor(context.getResources().getColor(R.color.maxColor));
         dataMax.setValueTextColor(context.getResources().getColor(android.R.color.transparent));
         dataMax.setDrawCircles(false);
@@ -119,9 +119,8 @@ public class InitChart {
             entries.add(entry);
         }
 
-        LineDataSet data = new LineDataSet(entries, "Poid de "+baby.getLastName() +" "+baby.getFirstName());
+        LineDataSet data = new LineDataSet(entries, baby.getLastName() +" "+baby.getFirstName());
         data.setColor(context.getResources().getColor(R.color.custom_baby));
-        //dataMax.setDrawCircles(false);
 
         lineData.addDataSet(data);
         return lineData;
@@ -142,7 +141,7 @@ public class InitChart {
             entries.add(entry);
         }
 
-        LineDataSet data = new LineDataSet(entries, "Taille de "+baby.getLastName() +" "+baby.getFirstName());
+        LineDataSet data = new LineDataSet(entries, baby.getLastName() +" "+baby.getFirstName());
         data.setColor(context.getResources().getColor(R.color.custom_baby));
         //dataMax.setDrawCircles(false);
 

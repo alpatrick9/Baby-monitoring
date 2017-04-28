@@ -2,121 +2,103 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_426997a668b8dcc0115ecf679f188cce90d7f3bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.48/afa06f539a4026c10b247386312aa67404b80a16/ormlite-android-4.48.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\patmi\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="afa06f539a4026c10b247386312aa67404b80a16">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-android-4.48_e1d531b471ce5075173b4d938a4370f3c4130af0/classes.dex" />
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_8266a0b92367b290a3d0d7b88756470e3fe9741e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_6904d60d77b95e7f80e27aa64812049f99ed3191/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="2baa90cf1cb0ed74944773be0adc4fbe5b8cc9ee">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2918a9d708fdbc30cca71313e0010ad3ec81ec3a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.2/5d4eb08a326bdbd7fbbddc769666898c9936b282/MPAndroidChart-v3.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5d4eb08a326bdbd7fbbddc769666898c9936b282">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v3.0.2_fa68e271754d84a9ee607d06bb35ce3fb29c50f3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_1e0b65a11b5cb4ce54f035638354213b91cb0a90/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/android-sdks/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\patmi\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_7f96cf1b3ffc7ed334f17b855a7b8276af871b55/classes.dex" />
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_1a4e9db5078190ff4d9b92d796d32c3717b0de80.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\patmi\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.2\5d4eb08a326bdbd7fbbddc769666898c9936b282\MPAndroidChart-v3.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_523101e1a3f57043a4047d885c6ee96b5c32a9a3/classes.dex" />
+        sha1="5d4eb08a326bdbd7fbbddc769666898c9936b282">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v3.0.2_bc6eadd083c7847a05c7eb38faf70e654b553654.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_437d9aeba2e4e500d9ce288cafb74f20b9e9d900/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_5e4f9a5a4f112f2f73f7f1242ce0fa2d514f3e94/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_c860bd8fd5b3b575cf52ca2b761142068dd9dfc7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="223c40150f710dc241a50f205b87b5870876be91">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_43fa8cf95c9955a6dd5c8cd8f3ec18adc8c1cad2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\patmi\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-core-4.48_877f8fcaf8177161c30e44c9f7e5858d2687c52a/classes.dex" />
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_4437edf0f3d3c284d5e8735b81d968ad5a9f6694.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_df34cd270d2f97509e6201abf032eedc7cb435a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_a262eba027f586ed3ec37337351575b9b01a4d91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_977dbc347985df5f9de3803f43272e6a0767c650.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_ee6367849ef7cb907861abfea6469da32853570f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_484cd7c25376a61201afef3aba303566da6c1b3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_f54e8e126a1f56572427e1f66a745d9ce0e10697.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\AndroidStudioProjects\Babymonitoring\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_dd838a6ddbd72e47117c6c4b25f3dd445225645d.jar" />
     </item>
 
 </items>
