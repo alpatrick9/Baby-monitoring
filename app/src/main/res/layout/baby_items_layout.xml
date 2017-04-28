@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullName"
+        android:textColor="@color/defaultColor"
+        android:textSize="@dimen/title_size"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullName"
+        android:text="@string/modify"
+        android:id="@+id/modify"
+        android:layout_alignParentLeft="true"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullName"
+        android:text="@string/memo"
+        android:layout_toRightOf="@+id/modify"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:id="@+id/memo"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullName"
+        android:text="@string/weight"
+        android:id="@+id/weight"
+        android:layout_toLeftOf="@+id/size"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullName"
+        android:text="@string/size"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:id="@+id/size"
+        />
+</RelativeLayout>

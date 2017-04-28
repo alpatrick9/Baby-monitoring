@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/new_baby_title"
+        android:id="@+id/title"
+        android:textColor="@color/defaultColor"
+        android:textSize="@dimen/title_size"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName"
+        android:hint="@string/last_name" />
+
+    <RadioGroup
+        android:id="@+id/sexeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastName"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/sexeBoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:text="@string/boy" />
+
+        <RadioButton
+            android:id="@+id/sexeGirl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sexeBoy"
+            android:text="@string/girl" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sexeGroup"
+        android:hint="@string/date_of_birth"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dateOfBirth"
+        android:background="@android:color/transparent"
+        android:text="@string/save_button"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateOfBirth"
+        android:layout_toLeftOf="@+id/saveButton"
+        android:background="@android:color/transparent"
+        android:text="@string/cancel_button"
+        android:textAllCaps="false" />
+</RelativeLayout>

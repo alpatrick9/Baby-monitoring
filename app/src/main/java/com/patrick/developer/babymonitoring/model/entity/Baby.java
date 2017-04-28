@@ -3,7 +3,10 @@ package com.patrick.developer.babymonitoring.model.entity;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
+import com.patrick.developer.babymonitoring.tools.constant.Sexe;
+import com.patrick.developer.babymonitoring.tools.date_manager.DateManager;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +14,7 @@ import java.util.Date;
  */
 
 @DatabaseTable(tableName = "BABY")
-public class Baby {
+public class Baby implements Serializable {
 
     @DatabaseField(generatedId = true)
     protected Long id;
@@ -22,7 +25,7 @@ public class Baby {
     @DatabaseField(columnName = "LASTNAME")
     protected String lastName;
 
-    @DatabaseField(columnName = "DATEOFBIRTH", dataType = DataType.DATE_STRING, format = "dd-MM-yyyy")
+    @DatabaseField(columnName = "DATEOFBIRTH", dataType = DataType.DATE_STRING, format = "dd/MM/yyyy")
     protected Date datOfBirth;
 
     @DatabaseField(columnName = "SEXE")
@@ -67,5 +70,22 @@ public class Baby {
 
     public void setDatOfBirth(Date datOfBirth) {
         this.datOfBirth = datOfBirth;
+    }
+
+    public String getSexe() {
+        return sexe;
+    }
+
+    public void setSexe(String sexe) {
+        this.sexe = sexe;
+    }
+
+    @Override
+    public String toString() {
+        String info = "";
+        info += "<p>"+ this.getLastName() + " " + this.getFirstName() +"</p>";
+        info += "<p>Né le "+ DateManager.dateToString(this.getDatOfBirth())+"</p>";
+        info += "<p> Sexe: "+ this.getSexe() +"</p>";
+        return info;
     }
 }

@@ -9,96 +9,96 @@ import java.util.List;
 
 public class InitDataBoy {
 
-    protected List<Double> sizeMin;
-    protected List<Double> sizeMax;
+    protected List<Float> wMin;
+    protected List<Float> wMax;
 
-    protected List<Double> weightMin;
-    protected List<Double> weightMax;
+    protected List<Float> sMin;
+    protected List<Float> sMax;
 
     public InitDataBoy() {
-        sizeMin = new ArrayList<>();
-        sizeMax = new ArrayList<>();
-        weightMin = new ArrayList<>();
-        weightMax = new ArrayList<>();
+        wMin = new ArrayList<>();
+        wMax = new ArrayList<>();
+        sMin = new ArrayList<>();
+        sMax = new ArrayList<>();
 
         /** a la naissance **/
-        sizeMin.add(2.6);
-        sizeMax.add(4.0);
-        weightMin.add(45.0);
-        weightMax.add(55.0);
+        wMin.add((float)2.6);
+        wMax.add((float)4.0);
+        sMin.add((float)45.0);
+        sMax.add((float)55.0);
 
         /** 1 mois **/
-        sizeMin.add(3.0);
-        sizeMax.add(5.0);
-        weightMin.add(49.0);
-        weightMax.add(55.0);
+        wMin.add((float)3.0);
+        wMax.add((float)5.0);
+        sMin.add((float)49.0);
+        sMax.add((float)55.0);
 
         /** 2 mois **/
-        sizeMin.add(3.7);
-        sizeMax.add(5.9);
-        weightMin.add(52.0);
-        weightMax.add(59.5);
+        wMin.add((float)3.7);
+        wMax.add((float)5.9);
+        sMin.add((float)52.0);
+        sMax.add((float)59.5);
 
         /** 3 mois **/
-        sizeMin.add(4.5);
-        sizeMax.add(6.9);
-        weightMin.add(55.0);
-        weightMax.add(62.0);
+        wMin.add((float)4.5);
+        wMax.add((float)6.9);
+        sMin.add((float)55.0);
+        sMax.add((float)62.0);
 
         /** 4 mois **/
-        sizeMin.add(5.1);
-        sizeMax.add(7.7);
-        weightMin.add(57.5);
-        weightMax.add(65.0);
+        wMin.add((float)5.1);
+        wMax.add((float)7.7);
+        sMin.add((float)57.5);
+        sMax.add((float)65.0);
 
         /** 5 mois **/
-        sizeMin.add(5.5);
-        sizeMax.add(8.5);
-        weightMin.add(59.5);
-        weightMax.add(67.5);
+        wMin.add((float)5.5);
+        wMax.add((float)8.5);
+        sMin.add((float)59.5);
+        sMax.add((float)67.5);
 
         /** 6 mois **/
-        sizeMin.add(6.0);
-        sizeMax.add(9.1);
-        weightMin.add(67.5);
-        weightMax.add(69.0);
+        wMin.add((float)6.0);
+        wMax.add((float)9.1);
+        sMin.add((float)67.5);
+        sMax.add((float)69.0);
 
         /** 1 an **/
-        sizeMin.add(7.6);
-        sizeMax.add(11.8);
-        weightMin.add(69.5);
-        weightMax.add(77.5);
+        wMin.add((float)7.6);
+        wMax.add((float)11.8);
+        sMin.add((float)69.5);
+        sMax.add((float)77.5);
     }
 
-    public List<Double> getSizeMin() {
-        return sizeMin;
+    public List<Float> getwMin() {
+        return wMin;
     }
 
-    public void setSizeMin(List<Double> sizeMin) {
-        this.sizeMin = sizeMin;
+    public void setwMin(List<Float> wMin) {
+        this.wMin = wMin;
     }
 
-    public List<Double> getSizeMax() {
-        return sizeMax;
+    public List<Float> getwMax() {
+        return wMax;
     }
 
-    public void setSizeMax(List<Double> sizeMax) {
-        this.sizeMax = sizeMax;
+    public void setwMax(List<Float> wMax) {
+        this.wMax = wMax;
     }
 
-    public List<Double> getWeightMin() {
-        return weightMin;
+    public List<Float> getsMin() {
+        return sMin;
     }
 
-    public void setWeightMin(List<Double> weightMin) {
-        this.weightMin = weightMin;
+    public void setsMin(List<Float> sMin) {
+        this.sMin = sMin;
     }
 
-    public List<Double> getWeightMax() {
-        return weightMax;
+    public List<Float> getsMax() {
+        return sMax;
     }
 
-    public void setWeightMax(List<Double> weightMax) {
-        this.weightMax = weightMax;
+    public void setsMax(List<Float> sMax) {
+        this.sMax = sMax;
     }
 }

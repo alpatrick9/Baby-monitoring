@@ -15,10 +15,13 @@ public class BabyWeight {
     protected Long id;
 
     @DatabaseField(columnName = "WEIGHT")
-    protected Double weight;
+    protected Float weight;
 
-    @DatabaseField(columnName = "MOUNTH", dataType = DataType.INTEGER, defaultValue = "0")
-    protected int mounth;
+    @DatabaseField(columnName = "MONTH", dataType = DataType.INTEGER, defaultValue = "0")
+    protected int month;
+
+    @DatabaseField(columnName = "OBS", canBeNull = true)
+    protected String obs;
 
     @DatabaseField(foreign = true, canBeNull = true)
     protected Baby baby;
@@ -26,9 +29,9 @@ public class BabyWeight {
     public BabyWeight() {
     }
 
-    public BabyWeight(Double weight, int mounth, Baby baby) {
+    public BabyWeight(Float weight, int month, Baby baby) {
         this.weight = weight;
-        this.mounth = mounth;
+        this.month = month;
         this.baby = baby;
     }
 
@@ -40,20 +43,28 @@ public class BabyWeight {
         this.id = id;
     }
 
-    public Double getWeight() {
+    public Float getWeight() {
         return weight;
     }
 
-    public void setWeight(Double weight) {
+    public void setWeight(Float weight) {
         this.weight = weight;
     }
 
-    public int getMounth() {
-        return mounth;
+    public int getMonth() {
+        return month;
     }
 
-    public void setMounth(int mounth) {
-        this.mounth = mounth;
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public String getObs() {
+        return obs;
+    }
+
+    public void setObs(String obs) {
+        this.obs = obs;
     }
 
     public Baby getBaby() {

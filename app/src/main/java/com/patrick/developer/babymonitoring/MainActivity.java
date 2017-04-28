@@ -2,7 +2,6 @@ package com.patrick.developer.babymonitoring;
 
 import android.app.Fragment;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -29,11 +28,11 @@ import com.patrick.developer.babymonitoring.init.InitDataBoy;
 import com.patrick.developer.babymonitoring.init.InitDataGirl;
 import com.patrick.developer.babymonitoring.model.entity.BabySize;
 import com.patrick.developer.babymonitoring.model.entity.BabyWeight;
+import com.patrick.developer.babymonitoring.tools.constant.BackStatus;
+import com.patrick.developer.babymonitoring.tools.constant.Constant;
 import com.patrick.developer.babymonitoring.tools.FragmentTool;
 
-import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -68,16 +67,6 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         }
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
     }
 
     protected void openHelperDatabase() {
@@ -115,7 +104,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     protected String infoApp() {
-        String copyright = "&copy; 2016";
+        String copyright = "&copy; 2017";
 
         try {
             PackageInfo info = this.getPackageManager().getPackageInfo(this.getPackageName(), PackageManager.GET_META_DATA);
@@ -175,7 +164,7 @@ public class MainActivity extends AppCompatActivity
                 final InitDataBoy initDataBoy = new InitDataBoy();
 
                 if(babySizeDao.countRow() == 0) {
-                    for (int i = 0; i < initDataBoy.getSizeMax().size(); i++) {
+                    for (int i = 0; i < initDataBoy.getwMax().size(); i++) {
                         BabySize babyBoySizeMin = null;
                         BabySize babyBoySizeMax = null;
                         BabyWeight babyBoyWeightMin = null;
@@ -186,27 +175,43 @@ public class MainActivity extends AppCompatActivity
                         BabyWeight babyGirlWeightMin = null;
                         BabyWeight babyGirlWeightMax = null;
 
-                        if(i == initDataBoy.getSizeMax().size() - 1) {
-                            babyBoySizeMin = new BabySize(initDataBoy.getSizeMin().get(i),12,null);
-                            babyBoySizeMax = new BabySize(initDataBoy.getSizeMax().get(i),12, null);
-                            babyBoyWeightMin = new BabyWeight(initDataBoy.getWeightMin().get(i),12, null);
-                            babyBoyWeightMax = new BabyWeight(initDataBoy.getWeightMax().get(i), 12, null);
+                        if(i == initDataBoy.getwMax().size() - 1) {
+                            babyBoySizeMin = new BabySize(initDataBoy.getsMin().get(i),12,null);
 
-                            babyGirlSizeMin = new BabySize(initDataGirl.getSizeMin().get(i),12,null);
-                            babyGirlSizeMax = new BabySize(initDataGirl.getSizeMax().get(i),12, null);
-                            babyGirlWeightMin = new BabyWeight(initDataGirl.getWeightMin().get(i),12, null);
-                            babyGirlWeightMax = new BabyWeight(initDataGirl.getWeightMax().get(i), 12, null);
+                            babyBoySizeMax = new BabySize(initDataBoy.getsMax().get(i),12, null);
+
+                            babyBoyWeightMin = new BabyWeight(initDataBoy.getwMin().get(i),12, null);
+
+                            babyBoyWeightMax = new BabyWeight(initDataBoy.getwMax().get(i), 12, null);
+
+                            babyGirlSizeMin = new BabySize(initDataGirl.getsMin().get(i),12,null);
+                            babyGirlSizeMax = new BabySize(initDataGirl.getsMax().get(i),12, null);
+
+                            babyGirlWeightMin = new BabyWeight(initDataGirl.getwMin().get(i),12, null);
+                            babyGirlWeightMax = new BabyWeight(initDataGirl.getwMax().get(i), 12, null);
                         } else {
-                            babyBoySizeMin = new BabySize(initDataBoy.getSizeMin().get(i),i,null);
-                            babyBoySizeMax = new BabySize(initDataBoy.getSizeMax().get(i),i, null);
-                            babyBoyWeightMin = new BabyWeight(initDataBoy.getWeightMin().get(i),i, null);
-                            babyBoyWeightMax = new BabyWeight(initDataBoy.getWeightMax().get(i), i, null);
+                            babyBoySizeMin = new BabySize(initDataBoy.getsMin().get(i),i,null);
+                            babyBoySizeMax = new BabySize(initDataBoy.getsMax().get(i),i, null);
 
-                            babyGirlSizeMin = new BabySize(initDataGirl.getSizeMin().get(i),i,null);
-                            babyGirlSizeMax = new BabySize(initDataGirl.getSizeMax().get(i),i, null);
-                            babyGirlWeightMin = new BabyWeight(initDataGirl.getWeightMin().get(i),i, null);
-                            babyGirlWeightMax = new BabyWeight(initDataGirl.getWeightMax().get(i), i, null);
+                            babyBoyWeightMin = new BabyWeight(initDataBoy.getwMin().get(i),i, null);
+                            babyBoyWeightMax = new BabyWeight(initDataBoy.getwMax().get(i), i, null);
+
+                            babyGirlSizeMin = new BabySize(initDataGirl.getsMin().get(i),i,null);
+                            babyGirlSizeMax = new BabySize(initDataGirl.getsMax().get(i),i, null);
+
+                            babyGirlWeightMin = new BabyWeight(initDataGirl.getwMin().get(i),i, null);
+                            babyGirlWeightMax = new BabyWeight(initDataGirl.getwMax().get(i), i, null);
                         }
+
+                        babyBoySizeMin.setObs(Constant.min_boy.name());
+                        babyBoySizeMax.setObs(Constant.max_boy.name());
+                        babyBoyWeightMin.setObs(Constant.min_boy.name());
+                        babyBoyWeightMax.setObs(Constant.max_boy.name());
+
+                        babyGirlSizeMin.setObs(Constant.min_girl.name());
+                        babyGirlSizeMax.setObs(Constant.max_girl.name());
+                        babyGirlWeightMin.setObs(Constant.min_girl.name());
+                        babyGirlWeightMax.setObs(Constant.max_girl.name());
 
                         babySizeDao.create(babyBoySizeMin);
                         babySizeDao.create(babyBoySizeMax);
@@ -249,5 +254,26 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            Fragment fragment = null;
+            switch (BackStatus.previous) {
+                case "home":
+                    fragment = new HomeFragment();
+                    break;
+                default:
+                    super.onBackPressed();
+                    break;
+            }
+            BackStatus.previous = "";
+            if(fragment != null)
+                FragmentTool.replaceFragment(this, fragment);
+        }
     }
 }

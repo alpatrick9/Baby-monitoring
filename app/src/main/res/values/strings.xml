@@ -8,4 +8,17 @@
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
     <string name="auteur">by Alain Patrick Rajaonarison</string>
+    <string name="first_name">Nom: </string>
+    <string name="last_name">Prénom: </string>
+    <string name="boy">Garçon</string>
+    <string name="girl">Fille</string>
+    <string name="sexe">Sexe:</string>
+    <string name="date_of_birth">Date de naissance: (01/12/2017) </string>
+    <string name="save_button">Sauvegarder</string>
+    <string name="cancel_button">Annuler</string>
+    <string name="new_baby_title">Nouvelle enregistrement</string>
+    <string name="weight">Poids</string>
+    <string name="size">Tailles</string>
+    <string name="modify">Modifier</string>
+    <string name="memo">Mémo</string>
 </resources>

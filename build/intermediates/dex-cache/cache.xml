@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_437d9aeba2e4e500d9ce288cafb74f20b9e9d900/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -43,17 +34,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="7540011182a82e80bb529520768932cc38168f54">
+        sha1="56491211245b7e97ed46c9d47fb24f3becc37b01">
         <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2918a9d708fdbc30cca71313e0010ad3ec81ec3a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_5e4f9a5a4f112f2f73f7f1242ce0fa2d514f3e94/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,6 +66,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_523101e1a3f57043a4047d885c6ee96b5c32a9a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_437d9aeba2e4e500d9ce288cafb74f20b9e9d900/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_5e4f9a5a4f112f2f73f7f1242ce0fa2d514f3e94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,30 +102,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="de5e4cc2e1a3e83bdb7edb96b1e659eca2baa18d">
+        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_43fa8cf95c9955a6dd5c8cd8f3ec18adc8c1cad2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
         <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-core-4.48_877f8fcaf8177161c30e44c9f7e5858d2687c52a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="3a830430cf0af986363875efeb5e59ee2c655d06">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_43fa8cf95c9955a6dd5c8cd8f3ec18adc8c1cad2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/developer/AndroidStudioProjects/Babymonitoring/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_523101e1a3f57043a4047d885c6ee96b5c32a9a3/classes.dex" />
     </item>
 
 </items>

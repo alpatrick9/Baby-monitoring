@@ -6,5 +6,6 @@
 
     <color name="defaultColor">#000</color>
 
-    <color name="red">#fc0303</color>
+    <color name="minColor">#fc0303</color>
+    <color name="maxColor">#d6b2b2</color>
 </resources>

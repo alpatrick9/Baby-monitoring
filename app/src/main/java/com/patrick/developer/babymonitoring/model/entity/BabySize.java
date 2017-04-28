@@ -15,10 +15,13 @@ public class BabySize {
     protected Long id;
 
     @DatabaseField(columnName = "SIZE")
-    protected Double size;
+    protected Float size;
 
-    @DatabaseField(columnName = "MOUNTH", dataType = DataType.INTEGER, defaultValue = "0")
-    protected int mounth;
+    @DatabaseField(columnName = "MONTH", dataType = DataType.INTEGER, defaultValue = "0")
+    protected int month;
+
+    @DatabaseField(columnName = "OBS", canBeNull = true)
+    protected String obs;
 
     @DatabaseField(foreign = true, canBeNull = true)
     protected Baby baby;
@@ -26,9 +29,9 @@ public class BabySize {
     public BabySize() {
     }
 
-    public BabySize(Double size, int mounth, Baby baby) {
+    public BabySize(Float size, int month, Baby baby) {
         this.size = size;
-        this.mounth = mounth;
+        this.month = month;
         this.baby = baby;
     }
 
@@ -40,20 +43,28 @@ public class BabySize {
         this.id = id;
     }
 
-    public Double getSize() {
+    public Float getSize() {
         return size;
     }
 
-    public void setSize(Double size) {
+    public void setSize(Float size) {
         this.size = size;
     }
 
-    public int getMounth() {
-        return mounth;
+    public int getMonth() {
+        return month;
     }
 
-    public void setMounth(int mounth) {
-        this.mounth = mounth;
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public String getObs() {
+        return obs;
+    }
+
+    public void setObs(String obs) {
+        this.obs = obs;
     }
 
     public Baby getBaby() {
